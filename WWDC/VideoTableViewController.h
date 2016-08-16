@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VideoDetailViewController.h"
+#import "AppDelegate.h"
 
-@interface VideoTableViewController : UITableViewController
+@interface VideoTableViewController : UITableViewController <VideoDetailViewControllerDelegate>
 @property (nonatomic, strong) NSString *conference_id;
 @end
